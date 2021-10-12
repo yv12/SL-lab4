@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>201900418</title>
+
+    </head>
+
+   <script type="text/javascript">
+ 			function add()
+      {
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne + numTwo;
+  document.getElementById("answer").value = sum;
+}
+ 		</script>
+ 	</head>
+ <body>
+     <style>
+     h1 {color:blue;
+         font-size:50px;}
+
+    output {
+      color:red;
+      font-size: 20px;
+    }
+ </style>
+
+<center>
+ 	<h1>Sum of two digits</h1>
+ 	<b>Enter first Number: </b><br>
+ 	<input type="text" id="first"/><br>
+ 	<b>Enter second Number: </b><br>
+ 	<input type="text" id="second"/><br><br>
+ 	<input type="button"  value="SUM" onClick="add()"/><br/><br/>
+Output is:<output id="answer"></output>
+  <br/>
+  <h4>Made by Yash vijay/201900418</h4>
+
+</center>
+ </body>
+</html>

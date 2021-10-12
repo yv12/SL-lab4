@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prime or Composite</title>
+  </head>
+<body>
+  <style>
+    h1 {font-family: American Typewriter;
+        text-align: center;}
+        h2 {font-family: American Typewriter;
+            text-align: center;
+          font-size:40px;}
+            h3 {font-family: American Typewriter;
+                text-align: center;
+              font-size:35px;}
+    p {font-family: American Typewriter;
+       font-size:25px;
+       text-align: justify;
+       color:;}
+       input[type=text] {
+         width: 10%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         box-sizing: border-box;
+         border: none;
+         border-radius: 4px;
+         background-color:grey;
+         color:black;
+       }
+       span{font-size:20px;
+         color:red;
+       }
+  </style>
+<h2> CHECK PRIME OR COMPOSITE!</h2>
+<h3>A Paragraph:</h3>
+<p><b>Prime</b> numbers are considered as the numbers which retain only two factors i.e. one and itself. It implies that the number can be divided only by 1 and itself. All prime numbers are an odd number apart from 2.
+<br/><b> Composite</b> numbers are those numbers that retain more than two factors. It implies that the number except one and itself can be divided by other numbers also. Every non- prime number is a composite number.
+</p><br/>
+
+    <script type="text/javascript">
+
+        function pc() {
+          {
+            num = parseInt(document.getElementById("num").value);
+            if(num)
+            {
+              chk=0;
+              temp = document.getElementById("ans");
+
+              for(i=2; i<num; i++)
+              {
+                if(num%2==0)
+                {
+                  chk++;
+                  break;
+                }
+              }
+              if(chk==0)
+                document.getElementById("res").innerHTML = " PRIME NUMBER";
+              else
+                document.getElementById("res").innerHTML = " COMPOSITE NUMBER";
+            }
+          }
+        }
+    </script>
+
+
+
+    <center>
+
+
+          <h2>Enter the number:</h2>
+            <input type="text" id ="num">
+
+            <br><br>
+
+            <input type="button" value="submit" onClick="pc()">
+            <br>
+            <output id="ans"></output> <span id="res"><b></b></span>
+            <br/>
+            <h4>Made by Yash vijay/201900418</h4>
+
+    </center>
+</body>
+
+</html>
